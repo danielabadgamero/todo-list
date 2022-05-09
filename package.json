@@ -1,0 +1,27 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "11th TOP project. Somewhat difficult",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielabadgamero/todo-list.git"
+  },
+  "keywords": [
+    "To-do",
+    "list"
+  ],
+  "author": "DanielDAG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielabadgamero/todo-list/issues"
+  },
+  "homepage": "https://github.com/danielabadgamero/todo-list#readme",
+  "dependencies": {
+    "date-fns": "^2.28.0",
+    "lodash": "^4.17.21"
+  }
+}
