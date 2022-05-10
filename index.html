@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List</title>
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="container">
@@ -18,11 +23,43 @@
       <div id="newtodo">+ Add new to-do</div>
       <div id="newproject">+ Add new project</div>
     </nav>
-    <main id="content">
+    <main>
+      <div id="title"></div>
+      <div id="content">
+
+      </div>
     </main>
     <footer>
       <p>Copyright &copy; 2022 Daniel Abad Gamero</p>
     </footer>
+    <div id="todo-form" class="empty">
+      <form>
+        <label for="todo-name">Name:</label>
+        <input type="text" id="todo-name">
+        <label for="todo-description">Description:</label>
+        <textarea id="todo-description"></textarea>
+        <label for="todo-date">Due:</label>
+        <input type="date" id="todo-date">
+        <div class="confirm-cancel">
+          <button id="confirm-todo" type="button">Confirm</button>
+          <button id="cancel-todo" type="button">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div id="project-form" class="empty">
+      <form>
+        <label for="project-name">Name:</label>
+        <input type="text" id="project-name">
+        <label for="project-description">Description:</label>
+        <textarea id="project-description"></textarea>
+        <label for="project-date">Due:</label>
+        <input type="date" id="project-date">
+        <div class="confirm-cancel">
+          <button id="confirm-project" type="button">Confirm</button>
+          <button id="cancel-project" type="button">Cancel</button>
+        </div>
+      </form>
+    </div>
   </div>
 </body>
 </html>
